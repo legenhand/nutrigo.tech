@@ -87,7 +87,7 @@ export default function SearchAppBar() {
                                 input: classes.inputInput,
                             }}
                             inputProps={{ 'aria-label': 'search' }}
-                        />d
+                        />
                     </div>
                     <div className={classes.buttonLogin}>
                         <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">

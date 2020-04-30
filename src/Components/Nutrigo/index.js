@@ -4,10 +4,11 @@ import Home from "../Home";
 import Stuff from "../Stuff";
 import Contact from "../Contact";
 import Carousel from "../Layouts/Carousel";
-
+import FoodNutri from "../Layouts/FoodNutri";
 export default props =>
     <div>
         <Carousel/>
+        <FoodNutri/>
         <h1>Simple SPA</h1>
         <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
