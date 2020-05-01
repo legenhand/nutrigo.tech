@@ -73,7 +73,6 @@ export default function FoodNutri() {
                             </Paper>
                         </Grid>
                     )}
-
                 </Grid>
             </Paper>
         </div>

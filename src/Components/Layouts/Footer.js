@@ -9,8 +9,6 @@ export default props =>
             textColor="primary"
             centered
         >
-            <Tab label="Item One" />
-            <Tab label="Item Two" />
-            <Tab label="Item Three" />
+            <Tab label="Copyright" />
         </Tabs>
     </Paper>

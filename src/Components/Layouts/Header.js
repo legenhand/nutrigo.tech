@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
         display: 'none',
+        padding: '0 3%',
         [theme.breakpoints.up('sm')]: {
             display: 'block',
         },
@@ -71,7 +72,7 @@ export default function SearchAppBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" color={"primary"}>
                 <Toolbar>
                     <Typography className={classes.title} variant="h6" noWrap>
                         Nutrigo.Tech
@@ -90,7 +91,7 @@ export default function SearchAppBar() {
                         />
                     </div>
                     <div className={classes.buttonLogin}>
-                        <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+                        <ButtonGroup variant="text" color="secondary" aria-label="contained primary button group">
                             <Button>Login</Button>
                             <Button>Signup</Button>
                         </ButtonGroup>
