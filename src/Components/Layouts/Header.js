@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     buttonLogin: {
-
+        padding: '0 3% 0 20%',
     },
 }));
 
@@ -74,12 +74,12 @@ export default function SearchAppBar() {
         <div className={classes.root}>
             <AppBar position="static" color={"primary"}>
                 <Toolbar>
-                    <Typography className={classes.title} variant="h6" noWrap>
+                    <Typography className={classes.title} variant="h6" noWrap color='secondary'>
                         Nutrigo.Tech
                     </Typography>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
-                            <SearchIcon />
+                            <SearchIcon color='secondary'/>
                         </div>
                         <InputBase
                             placeholder="Search…"
@@ -91,7 +91,7 @@ export default function SearchAppBar() {
                         />
                     </div>
                     <div className={classes.buttonLogin}>
-                        <ButtonGroup variant="text" color="secondary" aria-label="contained primary button group">
+                        <ButtonGroup color="secondary" aria-label="outlined primary button group">
                             <Button>Login</Button>
                             <Button>Signup</Button>
                         </ButtonGroup>

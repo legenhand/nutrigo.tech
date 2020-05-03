@@ -16,6 +16,16 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.text.secondary,
         margin: '18px 5%',
         maxWidth: 1280,
+        background: '#EDF5E1',
+    },
+    papernutri: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+        margin: '2px 2%',
+        maxWidth: 1280,
+        background: '#8EE4AF',
+
     },
     image: {
         width: 75,
@@ -57,7 +67,7 @@ export default function FoodNutri() {
                 <Grid container spacing={3}>
                     {items.map((item) =>
                         <Grid item xs={3}>
-                            <Paper className={classes.paper}>
+                            <Paper className={classes.papernutri}>
                                 <Typography gutterBottom variant="subtitle1">
                                     {item.name}
                                 </Typography>
