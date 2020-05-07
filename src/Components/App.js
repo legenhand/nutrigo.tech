@@ -1,12 +1,12 @@
 import React, {Component, Fragment} from "react";
 import {
     Route,
-    NavLink,
     HashRouter
 } from "react-router-dom";
-import { Header, Footer } from "./Layouts"
+import { Header } from "./Layouts"
 import Nutrigo from './Nutrigo'
-
+import SignIn from './SignIn'
+import SignUp from './SignUp'
 class App extends Component {
     render() {
         return (
@@ -14,8 +14,11 @@ class App extends Component {
                 <div>
                     <Fragment>
                         <Header/>
-                            <Nutrigo/>
-                        <Footer/>
+                            <div className="content">
+                                <Route exact path="/" component={Nutrigo}/>
+                                <Route path="/signin" component={SignIn}/>
+                                <Route path="/signup" component={SignUp}/>
+                            </div>
                     </Fragment>
                 </div>
             </HashRouter>

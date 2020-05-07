@@ -7,6 +7,7 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import SearchIcon from '@material-ui/icons/Search';
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -75,8 +76,12 @@ export default function SearchAppBar() {
             <AppBar position="static" color={"primary"}>
                 <Toolbar>
                     <Typography className={classes.title} variant="h6" noWrap color='secondary'>
-                        Nutrigo.Tech
+                        <Link to="/" style={{ textDecoration: 'none' }}>
+                            Nutrigo.Tech
+                        </Link>
                     </Typography>
+
+
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
                             <SearchIcon color='secondary'/>
@@ -92,8 +97,8 @@ export default function SearchAppBar() {
                     </div>
                     <div className={classes.buttonLogin}>
                         <ButtonGroup color="secondary" aria-label="outlined primary button group">
-                            <Button>Login</Button>
-                            <Button>Signup</Button>
+                            <Button component={Link} to="/signin">Sign In</Button>
+                            <Button component={Link} to="/signup">Signup</Button>
                         </ButtonGroup>
                     </div>
                     </Toolbar>
