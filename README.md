@@ -1,16 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0f604a67-5db9-4a9b-9353-476bcd060204/deploy-status)](https://app.netlify.com/sites/nutrigo/deploys)
 
-## Available Scripts
+# [Nutrigo Tech Website](https://nutrigo.sagita.tech)
 
-In the project directory, you can run:
+**Reactjs app using material ui + react router**
 
-### `npm start`
+## How To Setup This Website
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Requirements
+1. Nodejs and npm
+
+### How to install
+1. install all dependencies using `npm install`
+2. run `npm start` to runs the app in the development mode
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+## Reference
+
+1. [Learn Reactjs](https://reactjs.org/docs/getting-started.html)
+2. [Material UI](https://material-ui.com/getting-started/installation/)
+3. [Create Single Page Aplication Using React Router](https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm)
+
+
+## Another Available Scripts
 
 ### `npm test`
 
@@ -37,32 +51,5 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This Project licensed using [MIT License](https://github.com/legenhand/nutrigo.tech/blob/master/LICENSE)
