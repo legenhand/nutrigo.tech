@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     },
     avatar: {
         margin: theme.spacing(1),
-        backgroundColor: theme.palette.secondary.main,
+        backgroundColor: theme.palette.primary.main,
     },
     form: {
         width: '100%', // Fix IE 11 issue.
@@ -110,12 +110,12 @@ export default function SignInSide() {
                         </Button>
                         <Grid container>
                             <Grid item xs>
-                                <Link href="#" variant="body2">
+                                <Link href="#" variant="body2" color="inherit">
                                     Forgot password?
                                 </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="#" variant="body2">
+                                <Link href="/signup" variant="body2" color="inherit">
                                     {"Don't have an account? Sign Up"}
                                 </Link>
                             </Grid>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Carousel from 'react-material-ui-carousel'
 import {Paper} from "@material-ui/core";
 import ImageIcon from '@material-ui/icons/Image';
 import { makeStyles } from '@material-ui/core/styles';

@@ -76,9 +76,9 @@ export default function SearchAppBar() {
             <AppBar position="static" color={"primary"}>
                 <Toolbar>
                     <Typography className={classes.title} variant="h6" noWrap color='secondary'>
-                        <Link to="/" style={{ textDecoration: 'none' }}>
+                        
                             Nutrigo.Tech
-                        </Link>
+                       
                     </Typography>
 
 
