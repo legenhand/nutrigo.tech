@@ -4,9 +4,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 import SearchIcon from '@material-ui/icons/Search';
+import ProfileButton from "./Profile/Button";
 import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -75,13 +74,9 @@ export default function SearchAppBar() {
         <div className={classes.root}>
             <AppBar position="static" color={"primary"}>
                 <Toolbar>
-                    <Typography className={classes.title} variant="h6" noWrap color='secondary'>
-                        
+                    <Typography className={classes.title} variant="h6" noWrap color='secondary' component={Link} to="/">
                             Nutrigo.Tech
-                       
                     </Typography>
-
-
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
                             <SearchIcon color='secondary'/>
@@ -96,10 +91,7 @@ export default function SearchAppBar() {
                         />
                     </div>
                     <div className={classes.buttonLogin}>
-                        <ButtonGroup color="secondary" aria-label="outlined primary button group">
-                            <Button component={Link} to="/signin">Sign In</Button>
-                            <Button component={Link} to="/signup">Signup</Button>
-                        </ButtonGroup>
+                        <ProfileButton/>
                     </div>
                     </Toolbar>
             </AppBar>
