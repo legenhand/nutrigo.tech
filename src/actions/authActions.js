@@ -6,9 +6,13 @@ import {
     SET_CURRENT_USER,
     USER_LOADING
 } from "./types"; // Register User
+
+const cors = "https://cors-anywhere.herokuapp.com/";
+const url = "https://nutrigo-backend.herokuapp.com";
+
 export const registerUser = (userData, history) => dispatch => {
     axios
-        .post("https://nutrigo-backend.herokuapp.com/api/users/register", userData)
+        .post(cors + url + "/api/users/register", userData)
         .then(res => history.push("/signin")) // re-direct to login on successful register
         .catch(err =>
             dispatch({
@@ -19,7 +23,7 @@ export const registerUser = (userData, history) => dispatch => {
 }; // Login - get user token
 export const loginUser = userData => dispatch => {
     axios
-        .post("https://nutrigo-backend.herokuapp.com/api/users/login", userData)
+        .post(cors + url + "/api/users/login", userData)
         .then(res => {
             // Save to localStorage// Set token to localStorage
             const {
