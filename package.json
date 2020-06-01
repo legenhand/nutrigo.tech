@@ -32,7 +32,6 @@
     "backend": "npm start --prefix backend",
     "dev": "concurrently \"npm run start\" \"npm run backend\""
   },
-  "proxy": "https://nutrigo-backend.herokuapp.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
